@@ -7,5 +7,13 @@
     "dev:frontend": "bun run --filter frontend dev",
     "dev:backend": "bun run --filter backend dev",
     "build": "bun run --filter '*' build"
+  },
+  "devDependencies": {
+    "prisma": "^7.5.0"
+  },
+  "dependencies": {
+    "@prisma/adapter-libsql": "^7.5.0",
+    "@prisma/client": "^7.5.0",
+    "dotenv": "^17.3.1"
   }
 }

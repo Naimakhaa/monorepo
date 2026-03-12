@@ -13,7 +13,6 @@ const app = new Elysia()
   
   .use(cors({ origin: ["http://localhost:5173"] }))
   .use(swagger())
-  .get("/", () => ({ status: "ok" }))
   .listen(3000);
 
 console.log(`🦊 Backend → http://localhost:${app.server?.port}`);
