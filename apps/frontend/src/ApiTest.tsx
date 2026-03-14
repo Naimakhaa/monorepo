@@ -1,6 +1,6 @@
+import type { ApiResponse, HealthCheck } from "shared";
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import type { ApiResponse, HealthCheck } from "shared";
 
 function App() {
   const [response, setResponse] = useState<string>("")
@@ -11,6 +11,7 @@ function App() {
       const data: ApiResponse<HealthCheck> = await res.json()
 
       setResponse(data.data.status)
+
     } catch (error) {
       console.error(error)
       setResponse("Error connecting to server")
@@ -19,7 +20,7 @@ function App() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen gap-4">
-
+      
       <Button onClick={handleClick}>
         Get Response
       </Button>

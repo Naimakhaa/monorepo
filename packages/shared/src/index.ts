@@ -1,13 +1,15 @@
 export interface HealthCheck {
-  status: string
+  status: string;
 }
 
 export interface ApiResponse<T> {
   data: T;
   message?: string;
 }
+
+// Sesuai konteks tugas Perpustakaan kamu, tambahkan ini juga:
 export interface User {
-  id: number
-  name: string | null
-  email: string 
+  id?: number;
+  name: string | null;
+  email: string;
 }

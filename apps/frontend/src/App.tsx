@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 function App() {
   return (
     <div className="flex flex-col items-center justify-center gap-4 min-h-screen">
-
+      
       <Button>Default</Button>
 
       <Button variant="secondary">
